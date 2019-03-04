@@ -1,7 +1,6 @@
-# Acid Lab Test
+# Cornershop Test
 
-Used on this
-React
+This was made with React or how i like to call it from now on, Vue with autism.
 
 
 ### Prerequisites
