@@ -7,7 +7,7 @@ const returnSum = (posts)=>{
 
 export const fetchPosts = () => dispatch => { // actually called from cp
 
-		axios.get('http://localhost:3000/api/v1/counters',{},{
+		axios.get('/api/v1/counters',{},{
 		  headers: {'content-type':'application/json'}
 		}).then(posts=>{
 			returnSum(posts.data);
@@ -28,7 +28,7 @@ export const startNewPost = (stateData) => dispatch => { // actually called from
 
 export const saveNewPost = (stateData) => dispatch => { // actually called from cp
 		
-		axios.post('http://localhost:3000/api/v1/counter',{title: stateData.title},{
+		axios.post('/api/v1/counter',{title: stateData.title},{
 		  headers: {'content-type':'application/json'}
 		}).then(posts=>{
 			dispatch({
@@ -40,7 +40,7 @@ export const saveNewPost = (stateData) => dispatch => { // actually called from 
 
 export const counterInc = (counterId) => dispatch => { // actually called from cp
 		console.log('CID', counterId);
-		axios.post('http://localhost:3000/api/v1/counter/inc',{id: counterId},{
+		axios.post('/api/v1/counter/inc',{id: counterId},{
 		  headers: {'content-type':'application/json'}
 		}).then(posts=>{
 			dispatch({
@@ -53,7 +53,7 @@ export const counterInc = (counterId) => dispatch => { // actually called from c
 
 export const counterDec = (counterId) => dispatch => { // actually called from cp
 		console.log('CID', counterId);
-		axios.post('http://localhost:3000/api/v1/counter/dec',{id: counterId},{
+		axios.post('/api/v1/counter/dec',{id: counterId},{
 		  headers: {'content-type':'application/json'}
 		}).then(posts=>{
 			dispatch({
@@ -66,7 +66,7 @@ export const counterDec = (counterId) => dispatch => { // actually called from c
 
 export const deleteCounter = (counterId) => dispatch => { // actually called from cp
 		console.log('DELETE', counterId);
-		axios.delete('http://localhost:3000/api/v1/counter',{data:{id: counterId}},{
+		axios.delete('/api/v1/counter',{data:{id: counterId}},{
 		  headers: {'content-type':'application/json'}
 		}).then(posts=>{
 			dispatch({
