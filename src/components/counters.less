@@ -1,0 +1,60 @@
+.counters{
+
+    display: inline-block;
+    vertical-align: top;
+    height: auto;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1280px;
+    margin: 30px;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom:40px;
+
+    >div{
+        width: 100%;
+
+        .none-found{
+            background-color: white;
+            border:1px dashed #333;
+            .opacity(.5);
+            .border-radius(8px);
+            display: inline-block;
+            box-sizing: border-box;
+            padding: 10px;
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 35px;
+            text-align: center;
+            a{
+                color: #750CA3;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .no-counters{
+        background-color: white;
+        border:1px dashed #333;
+        .opacity(.5);
+        .border-radius(8px);
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 10px;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 35px;
+        text-align: center;
+        a{
+            color: #750CA3;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    @import '../components/counter.less';
+    @import '../components/addnewcounter.less';
+}

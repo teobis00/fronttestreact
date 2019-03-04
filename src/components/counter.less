@@ -1,0 +1,62 @@
+.counter{
+	background-color: #DDAFFF;
+	width: 100%;
+	.border-radius(8px);
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 10px;
+	.sh-1;
+	display: grid;
+	grid-template-columns: 1fr 255px auto;
+	margin-bottom: 35px;
+	>span{
+		font-size: 26px;
+		color: black;
+		line-height: 33px;
+    	padding-right: 10px;
+    	text-indent: 8px;
+    	overflow: hidden;
+    	text-overflow: ellipsis;
+    	max-width: 100%;
+    	white-space: nowrap;
+	}
+
+	.counter-controller{
+		background-color:#A78DFD;
+		.display(flex);
+		justify-content: space-between;
+		vertical-align: middle;
+		margin-top: -20px;
+		margin-bottom: -20px;
+		.border-radius(8px);
+		box-sizing:border-box;
+		padding:10px;
+		.sh-1;
+
+		input[type="text"]{
+			background-color:transparent;
+			border:none;
+			text-align: center;
+			font-size: 38px;
+			font-weight: 700;
+			max-width: 100px;
+		}
+		.round-button{
+			.border-radius(27px);
+			width: 54px;
+			height: 54px;
+			.display(flex);
+			.justify-content(center);
+			.align-items(center);
+			background-color:#750CA3;
+			border:none;
+			svg{
+				font-size: 28px;
+			}
+		}
+	}
+
+	>.button{
+		margin-left: 120px;
+	}
+}

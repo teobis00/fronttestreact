@@ -1,0 +1,8 @@
+export const FETCH_POSTS 	= 'FETCH_POSTS';
+export const START_NEW_POST = 'START_NEW_POST';
+export const COUNTER_INC   	= 'COUNTER_INC';
+export const COUNTER_DEC   	= 'COUNTER_DEC';
+export const DELETE_COUNTER = 'DELETE_COUNTER';
+export const CHANGE_COUNTERS_ORDER = 'CHANGE_COUNTERS_ORDER';
+export const SEARCH_COUNTER = 'SEARCH_COUNTER';
+export const ADVANCED_FILTER = 'ADVANCED_FILTER';
